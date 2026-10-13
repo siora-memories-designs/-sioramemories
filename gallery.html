@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Siora Memories and Design</title>
+    <meta name="description" content="View our portfolio of custom websites, memory albums, invitations, and posters.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span>Siora</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="https://wa.me/917418006223" class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="page-banner">
+    <div class="container fade-in">
+        <h1 id="gallery-title">Our Gallery</h1>
+        <p id="gallery-subtitle">A glimpse into the beautiful memories we've designed.</p>
+    </div>
+</section>
+
+<!-- GALLERY CONTENT -->
+<section class="gallery" id="gallery-section">
+    <div class="container">
+        <!-- 1. Categories / Folder Cards View -->
+        <div id="categories-view">
+            <div class="categories-grid" id="categories-grid">
+                <!-- Dynamically populated 8 category cards -->
+            </div>
+        </div>
+
+        <!-- 2. Single Category Media View (Shown when a folder card is clicked) -->
+        <div id="category-media-view" style="display: none;">
+            <div class="category-header">
+                <button type="button" class="back-btn" id="back-to-categories-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Gallery
+                </button>
+                <div class="category-heading-group">
+                    <h2 id="active-category-title" class="category-title">Category Name</h2>
+                    <span id="active-category-count" class="category-count-badge">0 items</span>
+                </div>
+            </div>
+
+            <!-- Media Grid (Images and HTML5 Video Players) -->
+            <div class="gallery-grid" id="category-media-grid">
+                <!-- Dynamically populated with files from the active category -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="category-empty-state" class="gallery-empty-state" style="display: none;">
+                <div class="empty-icon"><i class="fas fa-folder-open"></i></div>
+                <h3>No photos uploaded yet</h3>
+                <p>Add photos or videos to this folder to display them here.</p>
+                <span class="empty-folder-path" id="empty-folder-path">images/gallery/...</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <h3 class="logo">Siora</h3>
+                    <p>Turning Moments Into Forever. Custom designs for every occasion — made with love ♥</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/siora_memories_" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/917418006223" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:sioramemories@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917418006223"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="services.html">Websites</a></li>
+                    <li><a href="services.html">Portfolio Design</a></li>
+                    <li><a href="services.html">Memory Albums</a></li>
+                    <li><a href="services.html">Invitations</a></li>
+                    <li><a href="services.html">Posters</a></li>
+                    <li><a href="services.html">Polaroid Albums</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="tel:+917418006223"><i class="fas fa-phone"></i> +91 7418006223</a></li>
+                    <li><a href="https://wa.me/917418006223" target="_blank"><i class="fab fa-whatsapp"></i> +91 7418006223</a></li>
+                    <li><a href="mailto:sioramemories@gmail.com"><i class="fas fa-envelope"></i> sioramemories@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/siora_memories_" target="_blank"><i class="fab fa-instagram"></i> @siora_memories_</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Siora Memories and Design. All rights reserved. Made with ♥</p>
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/917418006223" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img src="" alt="">
+</div>
+
+<script src="js/gallery-data.js"></script>
+<script src="js/render-gallery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
